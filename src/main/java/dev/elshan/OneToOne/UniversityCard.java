@@ -1,9 +1,6 @@
 package dev.elshan.OneToOne;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
@@ -17,4 +14,7 @@ public class UniversityCard {
     private String cardNumber;
     @CreatedDate
     private LocalDateTime activatedAt;
+
+    @OneToOne(mappedBy = "studentCard")
+    private Student student;
 }

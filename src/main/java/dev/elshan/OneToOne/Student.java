@@ -1,9 +1,6 @@
 package dev.elshan.OneToOne;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Student {
@@ -14,4 +11,8 @@ public class Student {
     private String firstName;
     private String lastName;
     private Integer birthDate;
+
+    @OneToOne
+//    @JoinColumn(name = "card")
+    private UniversityCard studentCard;
 }

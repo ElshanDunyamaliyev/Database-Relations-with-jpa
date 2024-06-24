@@ -1,0 +1,1 @@
+One to One da istenilen teref owner ola biler amma One to Manyde many teref owner olur. Mapped by owner olmayan terefde islenir

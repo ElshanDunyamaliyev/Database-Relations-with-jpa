@@ -1,0 +1,1 @@
+Burda studentle ve kart arasinda one to one relation var. Burda JoinColumn hansi databasede column adi ne gorsenecey onu gosterir.Mapped By is one to one icerisinde gosterilir ve non owner terefde yazilir.deyeri owner clasin fieldNamedir.
